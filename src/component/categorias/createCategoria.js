@@ -2,7 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const URI = "http://localhost:3010/api/categorias/";
+
+const URI = "https://github-production-877a.up.railway.app/api/categorias"
 
 const CreateCategoriaComponent = () => {
   

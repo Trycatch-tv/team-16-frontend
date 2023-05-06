@@ -1,9 +1,11 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Select from "react-select"
 
-const URI = "http://localhost:3010/api/productos/";
+
+
+
+const URI = "https://github-production-877a.up.railway.app/api/productos";
 
 const UpdateProductoComponent = () => {
 
@@ -111,14 +113,13 @@ const UpdateProductoComponent = () => {
         </div>
         <div className="form-group mb-3 mt-3">
           <label className="form-label">stock</label>
-          <Select
-          options={estadostock}
+          <input
             type="text"
             name='stock'
             className="form-control"
-            value={producto.stock}
+            value={producto.stock || ''}
             onChange={e =>
-              setProducto({ ...producto, handdlerSelectChange })
+              setProducto({ ...producto, stock:e.target.value })
             }
           />
         </div>

@@ -1,9 +1,10 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Select from "react-select";
 
-const URI = "http://localhost:3010/api/productos/";
+
+
+const URI = "https://github-production-877a.up.railway.app/api/productos"
 
 const CreateProductoComponent = () => {
   const [cod_producto, setCodProducto] = useState("");
@@ -75,15 +76,7 @@ const CreateProductoComponent = () => {
           />              
 
         </div>
-        <div className="form-group mb-3 mt-3">
-          <label className="form-label">Imagen</label>
-          <input
-            value={imagen}
-            onChange={(e) => setImagen(e.target.value)}
-            type="text"
-            className="form-control"
-          />
-        </div>        
+           
         <div className="form-group mb-3 mt-3">
           <label className="form-label">Stock</label>
           <input
