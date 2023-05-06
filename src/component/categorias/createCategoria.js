@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-const URI = "https://github-production-877a.up.railway.app/api/categorias"
+const URI = "https://github-production-877a.up.railway.app/api/categorias/"
 
 const CreateCategoriaComponent = () => {
   

@@ -5,7 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 
 
-const URI = "https://github-production-877a.up.railway.app/api/productos";
+const URI = "https://github-production-877a.up.railway.app/api/productos/";
 
 const UpdateProductoComponent = () => {
 

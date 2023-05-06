@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 
-const URI = "https://github-production-877a.up.railway.app/api/productos";
+const URI = "https://github-production-877a.up.railway.app/api/productos/";
 const colspan = 3
 const GetProductosComponent = () => {
   const [productos, setProductos] = useState([]);

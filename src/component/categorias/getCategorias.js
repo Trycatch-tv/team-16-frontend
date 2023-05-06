@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
-const URI = "https://github-production-877a.up.railway.app/api/categorias"
+const URI = "https://github-production-877a.up.railway.app/api/categorias/"
 const colspan = 3
 const GetCategoriasComponent = () => {
   const [categorias, setCategoria] = useState([]);
